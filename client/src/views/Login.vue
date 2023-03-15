@@ -16,7 +16,7 @@ const code = ref("");
             <img :src="image" v-for="image in images" :key="image" class="w-10 h-10">
         </div>
 
-        <AuthInfo title="Authenticator Code " description="Giriş yapmak için kodu giriniz..." />
+        <AuthInfo title="Authenticator Kodu" description="Giriş yapmak için kodu giriniz..." />
 
         <AuthForm v-model="code" :handle-verify-code="handleVerifyCode" />
 
